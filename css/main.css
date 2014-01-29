@@ -17,6 +17,7 @@ h1 {
   font-weight: inherit;
   padding: 50px 0;
   font-size:1.5em;
+  text-align:center;
 }
 
 h2 {
@@ -31,6 +32,7 @@ h3 {
   color: inherit;
   font-weight: inherit;
   padding: 40px 0 10px;
+  text-align:center;
 }
 
 h4 {
@@ -337,7 +339,7 @@ input {
 
 /* @RESPONSIVE LARGE */
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
 
   /* @GROUP VISIBLE */
   .visible-small { display: none !important; }
@@ -348,11 +350,11 @@ input {
 
 
 /* @RESPONSIVE SMALL */
-@media (max-width: 799px) {
+@media (max-width: 800px) {
 
   /* @GROUP HEADER */
   #header .fa {
-    font-size: 2em;
+    font-size: 1.75em;
   }
 
   /* @GROUP PROFILE */
@@ -401,7 +403,7 @@ input {
   /* toggle featured project on and toggle button off */
 
   #slidebox:target #featured {
-    max-height:900px;
+    max-height:1200px;
     opacity:1;
   }
 
@@ -439,4 +441,39 @@ input {
   .visible-large { display: none !important; }
   .hidden-small { display: none !important; }
 
+}
+
+
+/* @GROUP 404 */
+
+#page404 {
+  background-color: #134157;
+  text-align:center;
+  color: #fff;
+  font-weight: 200;
+}
+
+#content404 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 1% 0;
+}
+
+#img404 {
+  display:block;
+  width:100%;
+  max-width:400px;
+  margin:0 auto;
+  padding-bottom: 40px;
+}
+
+#page404 h1 {
+  font-weight: 200;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 20px 0 40px;
+}
+
+#page404 a {
+  font-size: 1.25em;
+  border-bottom: 1px solid #1ba1e2;
 }
