@@ -202,7 +202,7 @@ blockquote {
 
 #social-list > li {
   margin:0 5%;
-  font-size: 0.875em;
+  font-size: 0.9375em;
 }
 
 #social-list a {
@@ -336,6 +336,7 @@ input {
 
 
 /* @RESPONSIVE LARGE */
+
 @media (min-width: 800px) {
 
   /* @GROUP VISIBLE */
@@ -345,8 +346,9 @@ input {
 
 }
 
+
 /* @RESPONSIVE SMALL */
-@media (max-width: 800px) {
+@media (max-width: 799px) {
 
   /* @GROUP HEADER */
   #header .fa {
