@@ -11,11 +11,12 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   color:#333;
+  overflow-x: hidden;
 }
 
 h1 {
   font-weight: inherit;
-  padding: 50px 0;
+  padding: 50px 0 25px;
   font-size:1.5em;
   text-align:center;
 }
@@ -175,6 +176,11 @@ blockquote {
 #header {
   height:60px;
   padding-top:10px;
+}
+
+#logo {
+  width: 214px;
+  max-width: 55%;
 }
 
 #contact {
@@ -454,7 +460,7 @@ input {
 }
 
 #content404 {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 50px 1% 0;
 }
@@ -462,7 +468,7 @@ input {
 #img404 {
   display:block;
   width:100%;
-  max-width:400px;
+  max-width:600px;
   margin:0 auto;
   padding-bottom: 40px;
 }
