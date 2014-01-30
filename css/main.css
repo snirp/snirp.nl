@@ -59,12 +59,18 @@ a {
   text-decoration:none;
 }
 
+p a {
+  text-decoration:underline;
+}
+
 a:visited {
   color: inherit;
+  text-decoration:inherit;
 }
 
 a:hover {
-  text-decoration: none;
+  color: inherit;
+  text-decoration:inherit;
 }
 
 a {
