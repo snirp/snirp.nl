@@ -1,5 +1,3 @@
 User-agent: *
 Disallow: /js/
 Sitemap: http://snirp.nl/sitemap.xml
-User-agent: URLspion
-Disallow: /
