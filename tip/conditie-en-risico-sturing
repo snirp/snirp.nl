@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class='no-js' lang='nl'>
+<head>
+
+  
+  
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+  <meta name='description' content='Snirp is een jong maar ervaren adviebureau dat vastgoedbeheer stroomlijnt.'>
+  
+  <link rel='author' href='https://plus.google.com/+RoyPrins_page?rel=author'>
+  <link rel='shortcut icon' type='image/png' href="../static/images/snirp_favicon.png">
+  <script src="../static/js/custom_scripts.js" type='text/javascript'></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href="../static/css/tip.css">
+  <link rel='shortcut icon' type='image/png' href="../static/images/snirp_favicon.png">
+
+  
+    <title>Risico- en conditiegestuurd onderhoud met Stravis - Stravis tips en trucs</title>
+  
+
+</head>
+<body >
+  
+<div class="content-wrapper">
+  <div id="header">
+    <a href="../tips"><img src="../static/images/tiplogo.jpg" alt="logo tips & trucs" class="float-left"></a>
+    <ul class="float-right">
+      <li><a href="http://snirp.nl">Snirp advies</a></li>
+      <li><a href="http://we-r-consultants.nl">We-R Consultants</a></li>
+    </ul>
+  </div>
+  <div class="clearfix"></div>
+  
+
+<h1>Risico- en conditiegestuurd onderhoud met Stravis</h1>
+
+<h2>Introductie</h2>
+<p>Dit artikel is geschreven voor beleidsmakers en technisch vastgoedbeheerders. We bespreken de mogelijkheden die vastgoedbeheerders hebben om onderhoud te sturen op prestaties: hiertoe kunnen conditiescores en (aspect)risico's in beeld gebracht worden en als sturingsinstrument gebruikt worden. Meer specifiek gaan we ook in op de mogelijkheden die Stravis hierin biedt.</p>
+<p>De NEN-2767 norm beschrijft de volgende risico aspecten:</p>
+<ul>
+<li>Veiligheid en gezondheid</li>
+<li>Technische werking of bedrijfsproces</li>
+<li>Gevolgschade</li>
+<li>Uitstraling </li>
+<li>Cultuurhistorische waarde</li>
+</ul>
+<p>Het is bovendien mogelijk om als organisatie hier zelf aspecten om op te sturen aan toe te voegen.  </p>
+<h2>Sturen</h2>
+<p>Het onderhoudsbeleid van een organisatie wordt binnen Stravis in een zogenaamd "etiket" vastgelegd. Hierin zijn zowel de beleidsuitgangspunten als de vertaling hiervan naar de onderhoudspraktijk uitgedrukt.  Van belang is te weten dat een organisatie met meerdere etiketten naast elkaar kan werken. Daarmee kan binnen het bezit worden gevarieerd of gedifferentieerd.</p>
+<p>Het is denkbaar dat de functie, bestemming of levensfase van een complex vraagt om een bepaalde sturing van het onderhoud. Vaak is dit in het complexbeheerplan vastgelegd. Het etiket zorgt ervoor dat de onderhoudsplanning correspondeert met het gewenste onderhoudsniveau voor het complex.</p>
+<p>In ieder etiket wordt het beleid vastgelegd in <em>prestatie-eisen</em>,  <em>normmaatregelen</em> en <em>onderhoudsintervallen</em>.</p>
+<h3>prestatie-eisen:</h3>
+<p>In een prestatie-eis wordt per aspect vastgelegd welk risico maximaal acceptabel is. Bij overschrijding van dit risico is er aanleiding om een maatregel in te plannen. Sturing vindt plaats door te variëren met acceptabele risico's, eventueel op het niveau van individuele bouwdelen.</p>
+<p>Bij bezit dat zal worden uitgefaseerd, wordt over het algemeen een groter risico geaccepteerd voor bepaalde aspecten. Hieronder zijn twee indicatieve onderhoudsniveaus uitgewerkt. Van belang is om op te merken dat de sturing per risico plaatsvindt. </p>
+<table>
+<tr>    <th>aspect</th>
+        <th>comfortniveau</th>
+        <th>uitfaseren</th>
+</tr>
+<tr>    <td>Veiligheid</td>     
+        <td class='center'><span class='cm cm2'>2</span></td>
+        <td class='center'><span class='cm cm2'>2</span></td>
+</tr>
+<tr>    <td>Werking</td>
+        <td class='center'><span class='cm cm3'>3</span></td>
+        <td class='center'><span class='cm cm4'>4</span></td>
+</tr>
+<tr>    <td>Gevolgschade</td>
+        <td class='center'><span class='cm cm3'>3</span></td>
+        <td class='center'><span class='cm cm4'>4</span></td>
+</tr>
+<tr>    <td>Uitstraling</td>
+        <td class='center'><span class='cm cm4'>4</span></td>
+        <td class='center'><span class='cm cm6'>6</span></td>
+</tr>
+<tr>    <td>Cultuurhistorisch</td>
+        <td class='center'><span class='cm cm4'>4</span></td>
+        <td class='center'><span class='cm cm6'>6</span></td>
+        </tr>
+</table>
+
+<h3>normmaatregelen:</h3>
+<p>Normmaatregelen vertalen een overschrijding van een prestatie-eis naar de reactie hierop. Afhankelijk van de ernst van de overschrijding en de beleidsuitgangspunten wordt herstel of vervanging ingepland. </p>
+<p>Ook hier kan de beheerder sturen: bij bezit dat zal worden uitgefaseerd zal eerder herstel dan vervanging worden ingepland.</p>
+<table>
+<tr>    <th>gebrek</th>
+        <th>intensi.</th>
+        <th>omvang</th>
+        <th>&gt;</th>
+        <th>maatregel</th>
+        <th>perc</th>
+</tr>
+<tr>    <td>Serieus</td>        
+        <td>Hoog</td>   
+        <td>10%-30%</td>    
+        <td>&gt;</td>
+        <td>Herstellen</td> 
+        <td>20%</td>    
+</tr>
+<tr>    <td>Serieus</td>        
+        <td>Hoog</td>   
+        <td>30%-70%</td>    
+        <td>&gt;</td>
+        <td>Herstellen</td> 
+        <td>50%</td>    
+</tr>
+<tr>    <td>Serieus</td>        
+        <td>Hoog</td>   
+        <td>70%-100%</td>
+        <td>&gt;</td>   
+        <td>Vervangen</td>  
+        <td>100%</td>   
+</tr>
+</table>
+
+<h3>onderhoudsintervallen:</h3>
+<p>Een conditiemeting heeft vooral voorspellende en sturende waarde voor de korte tot eventueel middellange termijn. Voor de langere termijn is het van belang de onderhoudsintervallen vast te leggen: Wat is de schildercyclus voor het binnen- en buitenwerk? Welk percentage houtrotherstel calculeren we in? Wat is de levensduur van de gootbekledingen?</p>
+<p>Hierbij is ook sturing mogelijk. Door de cycli op te rekken accepteer je impliciet een lagere kwaliteit. Een andere keuze is tussen frequenter herstellen of periodiek vervangen.</p>
+<table>
+<tr>    <th>element</th>
+        <th>maatregel</th>
+        <th>cyclus</th>
+        <th>perc</th>
+</tr>
+<tr>    <td>Buitenschilderwerk</td>     
+        <td>Herschilderen</td>  
+        <td>6 jr</td>   
+        <td>100%</td>
+</tr>
+<tr>    <td>Buitenschilderwerk</td>     
+        <td>Nw. verfsysteem</td>    
+        <td>24 jr</td>  
+        <td>100%</td>
+</tr>
+<tr>    <td>Binnenschilderwerk</td>     
+        <td>Herschilderen</td>  
+        <td>12 jr</td>  
+        <td>100%</td>
+</tr>
+</table>
+
+<h2>Meten</h2>
+<p>Bij het uitvoeren van de conditiemeting worden de aard, omvang en intensiteit van gebreken beoordeeld. De gebreken zijn gekoppeld aan een risicoweging per aspect.</p>
+<table>
+<tr>    <th>element</th>
+        <th>gebrek</th>
+        <th>omvang</th>
+        <th>intens.</th>
+        <th>aspect</th>
+        <th>score</th>
+</tr>
+<tr>    <td>Metselwerk</td>     
+        <td>Scheurvorming</td>  
+        <td>2%-10%</td> 
+        <td>Hoog</td>
+        <td class='center'><span class='cm cm3'>3</span></td>
+        <td>Veiligheid</td>
+
+</tr>
+<tr>    <td></td>       
+        <td></td>   
+        <td></td>
+        <td></td>
+        <td class='center'><span class='cm cm2'>2</span></td>
+        <td>Werking</td>
+</tr>
+<tr>    <td></td>       
+        <td></td>   
+        <td></td>
+        <td></td>
+        <td class='center'><span class='cm cm3'>3</span></td>
+        <td>Gevolgsch.</td>
+</tr>
+<tr>    <td></td>       
+        <td></td>   
+        <td></td>   
+        <td></td>
+        <td class='center'><span class='cm cm2'>2</span></td>
+        <td>Uitstraling</td>
+</tr>
+<tr>    <td></td>       
+        <td></td>   
+        <td></td>   
+        <td></td>
+        <td class='center'><span class='cm cm2'>2</span></td>
+        <td>Cultuurhist.</td>       
+</tr>
+</table>
+
+<p>De conditiemeting is een genormeerde en objectieve methode om de onderhoudsstaat en risico's in beeld te brengen. Als zodanig doet de conditiemeting op zichzelf geen uitspraken over de onderhoudsbehoefte en planning: de beleidsuitgangspunten (etiketten) zijn hierin in combinatie met de conditiemeting leidend.</p>
+<h2>Plannen</h2>
+<p>Op basis van de beschikbare gegevens per complex, de uitgevoerde conditiemeting en het etiket kan Stravis op basis van zijn <em>rekenkern</em> één of meerdere <em>scenario's</em> genereren.</p>
+<h3>rekenkern:</h3>
+<p>De rekenkern bepaald op basis van eerder gemaakte instellingen voor ieder element of er sprake is van overschrijding van de risico's. Als er geen onmiddellijke overschrijding is, wordt op basis van gebreksontwikkeling voorspeld wanneer er wel sprake is van overschrijding.</p>
+<p>De rekenkern stelt een maatregel voor op basis van de omvang en intensiteit van het gebrek en de eerder gemaakte instellingen voor normmaatregelen. De gebruiker kan deze voorgestelde maatregelen vervolgens controleren en aanpassen.</p>
+<h3>scenario's:</h3>
+<p>Per complex kunnen meerdere scenario's worden gegenereerd om "wat als?" vragen te beantwoorden:</p>
+<ul>
+<li>Wat zijn de consequenties als we een hoger of lager niveau van onderhoud toepassen?</li>
+<li>Wat gebeurt er als we besluiten te variëren met de exploitatieduur van het complex?</li>
+<li>Wat zijn de gevolgen als we rekening houden met afbouw van maatregelen richting het einde van de levensduur?</li>
+</ul>
+<h2>Rapporteren</h2>
+<p>De scenario's leveren een rijkdom aan gegevens op. Na analyse en juiste interpretatie, kunnen deze worden gebruikt om feedback te geven op de gehanteerde instellingen en voor het beleid. </p>
+<p>Stravis biedt zelf enkele beperkte tools om resultaten te filteren en analyseren. Omdat alle programmagegevens vanuit een database toegankelijk zijn, is het ook mogelijk om met externe applicaties, zoals Excel, rapportages om maat te maken. Wij kunnen de implementatie hiervan ondersteunen en begeleiden.</p>
+<p><img src="../static/images/tips/t002_diagram.png" class='tipimg' alt='diagram'></p>
+<h2>Mogelijkheden voor de organisatie</h2>
+<p>Hierboven hebben we beschreven hoe een organisatie de primaire processen van <em>sturen</em>, <em>meten</em>, <em>plannen</em> en <em>rapporteren</em> kan inrichten en combineren. Met een juist gebruik en inrichting kan Stravis hierin een belangrijke rol spelen. Op deze manier ondersteunt het planmatig onderhoudsproces een lerende organisatie.  </p>
+<p><img src="../static/images/tips/t002_achtbaan.png" class='tipimg' alt='achtbaan'></p>
+<p>In het bijzonder is het mogelijk om een afweging te kunnen maken tussen kosten en risico's. Dit een vraag die steeds vaker aan woningcorporaties gesteld wordt.</p>
+<p>Heeft u vragen of wilt u bespreken hoe u hiervan met uw organisatie kunt profiteren, neem dan contact met ons op.</p>
+
+  <div id="spacer"></div>
+</div>
+<div id="footer">
+  <div></div>
+  <span>
+    Mogelijk gemaakt door <a href="http://snirp.nl">Snirp</a> en <a href="http://we-r-consultants.nl">We-R Consultants</a>.
+    Bezoek onze <a href="https://www.linkedin.com/groups?gid=7454573">linked-in groep</a>.
+  </span>
+</div>
+
+</body>
+</html>

@@ -189,6 +189,7 @@ blockquote {
 #logo {
   width: 214px;
   max-width: 55%;
+  float:left;
 }
 
 #contact {
@@ -470,7 +471,7 @@ input {
 #content404 {
   max-width: 960px;
   margin: 0 auto;
-  padding: 50px 1% 0;
+  padding: 50px 1% 10px;
 }
 
 #img404 {
