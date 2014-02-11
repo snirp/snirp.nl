@@ -14,7 +14,7 @@ app.config['FLATPAGES_MARKDOWN_EXTENSIONS'] = ['codehilite', 'headerid', 'fenced
 app.config['FLATPAGES_HTML_RENDERER'] = prerender_jinja
 
 app.config['FREEZER_DESTINATION'] = 'gh-pages'
-app.config['FREEZER_DESTINATION_IGNORE'] = ['.git*', 'CNAME', '.gitignore']
+app.config['FREEZER_DESTINATION_IGNORE'] = ['.git*', 'CNAME', '.gitignore', 'readme.md']
 app.config['FREEZER_RELATIVE_URLS'] = True
 
 SITEMAP_DOMAIN = 'http://snirp.nl/'
