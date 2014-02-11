@@ -1,5 +1,7 @@
-snirp.nl
-========
+##snirp.nl
 
-[master branch](https://github.com/snirp/snirp.nl/tree/master) > contains Flask application
-[gh-pages branch](https://github.com/snirp/snirp.nl/tree/gh-pages) > hosted static files
+This repository contains the company website for [Snirp](http://www.snirp.nl).
+
+This branch: [master](https://github.com/snirp/snirp.nl/tree/master) > contains Flask application
+
+Pages branch [gh-pages](https://github.com/snirp/snirp.nl/tree/gh-pages) > hosted static files
