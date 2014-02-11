@@ -1,0 +1,1 @@
+This is the static page for snirp.nl. Hosted on github pages.
