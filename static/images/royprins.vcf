@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.9.1//EN
+N:Prins;Roy;;;
+FN:Roy Prins
+EMAIL;type=INTERNET;type=WORK;type=pref:roy@snirp.nl
+TEL;type=CELL;type=VOICE;type=pref:+31 (0) 6 47 41 62 78
+URL;type=WORK;type=pref:http:/www.snirp.nl
+URL;type=HOME:http://snirp.svbtle.com
+BDAY:1978-08-27
+X-ABUID:346F9ACD-D30B-4F76-8592-7445097D8E6E:ABPerson
+END:VCARD

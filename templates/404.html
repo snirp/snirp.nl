@@ -1,0 +1,20 @@
+{% extends "base_front.html" %}
+
+{% block head %}
+{{ super() }}
+<title>Opgegeven pagina bestaat niet | snirp</title>
+{% endblock %}
+
+{% block bodyid %}id="page404"{% endblock %}
+
+{% block content %}
+<div id="content404">
+  404
+  <h1>Deze pagina bestaat niet.</h1>
+  <img id="img404" src="{{ url_for('static', filename='images/vallend.png') }}" alt="">
+  <a href="{{ url_for('index') }}">
+    <i class="fa fa-arrow-circle-o-left"></i>
+    Terug naar snirp.nl
+  </a>
+</div>
+{% endblock %}

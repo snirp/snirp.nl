@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class='no-js' lang='nl'>
+<head>
+{% block head %}
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  {% if description %}
+  <meta name='description' content='{{description}}'>
+  {% else %}
+  <meta name='description' content='Snirp is een jong maar ervaren adviebureau dat vastgoedbeheer stroomlijnt.'>
+  {% endif %}
+  <link rel='author' href='https://plus.google.com/+RoyPrins_page?rel=author'>
+  <link rel='shortcut icon' type='image/png' href="{{ url_for('static', filename='images/snirp_favicon.png') }}">
+  <script src="{{ url_for('static', filename='js/custom_scripts.js') }}" type='text/javascript'></script>
+{% endblock %}
+</head>
+<body {% block bodyid %}{% endblock %}>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
