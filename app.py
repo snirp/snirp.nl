@@ -10,7 +10,6 @@ def prerender_jinja(text):
     return pygmented_markdown(render_template_string(Markup(text)))
 
 app.config['FLATPAGES_EXTENSION'] = '.md'
-app.config['FLATPAGES_MARKDOWN_EXTENSIONS'] = ['codehilite', 'headerid', 'fenced_code']
 app.config['FLATPAGES_HTML_RENDERER'] = prerender_jinja
 
 app.config['FREEZER_DESTINATION'] = 'gh-pages'
