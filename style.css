@@ -86,7 +86,7 @@ footer li { font-size: 0.875em; list-style-type: none; padding:2px 0; }
 #tipcontent ul { padding-left: 40px; padding-right: 0; list-style-type: disc; }
 #tipcontent ol { padding-left: 40px; padding-right: 0; }
 #tipcontent li, #tipcontent p { font-size: 1em; }
-#tipcontent h2, #tipcontent h3, #tipcontent h4, #tipcontent h5, #tipcontent h6{ text-align: left; }
+#tipcontent h2, #tipcontent h3, #tipcontent h4, #tipcontent h5, #tipcontent h6{ text-align: left; margin-top:20px; margin-bottom:10px; }
 #tipcontent h2 { font-size:1.5em; color: #1ba1e2; }
 #tipcontent h3 { font-size:1.375em; color: inherit; }
 #tipcontent h4 { font-size:1.25em; color: #1ba1e2; }
@@ -99,6 +99,7 @@ footer li { font-size: 0.875em; list-style-type: none; padding:2px 0; }
 #page-tip td, #page-tip th { border-bottom: 1px solid #333; }
 #page-tip th { font-weight: bold; }
 #page-tip td { border-bottom-color: #888; }
+#page-tip code { border: 1px solid #555; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; color: #1ba1e2; font-size: 1.25em; padding: 2px 6px; }
 .cm { padding:0 4px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; font-family: monospace, serif; }
 .cm2 { background-color: green; color: #fff; }
 .cm3 { background-color: yellow; color: #000; }
