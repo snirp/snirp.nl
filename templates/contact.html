@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container container-full">
+  <div class="container container-wide">
+    <h1>Contact</h1>
+
+    <h2>contactgegevens</h2>
+    <ul class="contact-list">
+      <li>Roy Prins</li>
+      <li><i class="fa fa-envelope fa-fw"></i> <a href="mailto:info@snirp.nl" title="e-mail">info@snirp.nl</a></li>
+      <li><i class="fa fa-phone fa-fw"></i> <a href="tel:0647416278" title="telefonisch contact">06-47416278</a></li>
+      <li><i class="fa fa-twitter fa-fw"></i> <a href="http://twitter.com/royprins" target="_blank" title="twitter">twitter.com/royprins</a></li>
+      <li><i class="fa fa-linkedin fa-fw"></i> <a href="https://www.linkedin.com/in/prinsroy" target="_blank" title="linked-in profiel">linkedin.com/in/prinsroy</a></li>
+      <li><i class="fa fa-pencil fa-fw"></i> <a href="http://royprins.com/" target="_blank" title="blog van Roy Prins">webblog</a></li>
+      <li><i class="fa fa-tag fa-fw"></i> <a href="{{ url_for('static', filename='images/royprins.vcf') }}" title="voeg toe als contact">V-card</a></li>
+    </ul>
+
+    <h2>Bedrijfsgegevens</h2>
+    <ul class="contact-list">
+      <li>KvK: 55863698</li>
+      <li>Bank: 39.63.59.450</li>
+      <li>BTW: NL178822383B01</li>
+    </ul>
+    </div>
+</div>
+{% endblock %}

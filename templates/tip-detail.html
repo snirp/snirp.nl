@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="hidden-screen" id="printheader">
+  <p>
+    Dit document is een artikel uit de reeks "Stravis Tips & Trucs". Deze artikelen
+     worden u aangeboden door Snirp en We-R consultants. Bezoek de
+    website snirp.nl voor meer tips en trucs.
+  </p>
+  <p class="right">Copyright Snirp 2014</p>
+</div>
+
+<div class="container container-narrowed" id="tipcontent">
+<h1>{{ t.meta.title }}</h1>
+
+{{ t.html|safe }}
+</div>
+
+
+<div class="hidden-screen" id="printfooter">
+  <p class="center">www.snirp.nl - info@snirp.nl - Copyright Snirp 2014</p>
+</div>
+{% endblock %}

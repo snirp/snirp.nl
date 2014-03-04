@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% macro html5_date(date, format='%B %d, %Y', pubdate=True) -%}
+    <time{{ ' pubdate' if pubdate }} datetime="{{ date.isoformat() }}">
+        {{ date }}</time>
+{%- endmacro %}
+
+
+{% block content %}
+<div class="container container-narrowed">
+<h1>Stravis tips & trucs</h1>
+<p>
+  Op deze pagina worden regelmatig tips & trucs voor beter en effectiever
+  gebruik van Stravis gepubliceerd.
+  De doelgroep betreft zowel de kerngebruikers van Stravis als de managers en
+  teamleiders die te maken hebben met onderhoud en technisch beheer.
+</p>
+<p>
+  Deze artikelen worden u aangeboden door Snirp en
+  <a href="http://www.we-r-consultants.nl/" target="_blank">We-R consultants</a>.
+  Wij hopen hiermee het gebruik en de mogelijkheden van Stravis te professionaliseren.
+  We bespreken onderstaande artikelen op onze <a href="https://www.linkedin.com/groups?gid=7454573" target="_blank">
+  Stravis Tips & Trucs groep </a> op Linked-in.
+  Hier horen we ook graag uw suggesties.
+</p>
+<div id="articles">
+  {% for tip in tips %}
+  <article>
+    <a href=" {{ tip.url() }} " class="blocklink">
+      <h2>{{ tip.title }}</h2>
+      <p>{{ tip.summary|jinjatag|markdown|safe }}</p>
+      <div class="float-left"><p>{{ tip.author }}, {{ html5_date(tip.published) }}</p></div>
+      <a href="{{ tip.pdf() }}" class="blocklink float-right"><p>[download als pdf]</p></a>
+      <div class="clearfix"></div>
+    </a>
+  </article>
+  {% endfor %}
+</div>
+</div>
+{% endblock %}

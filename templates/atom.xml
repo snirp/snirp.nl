@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>snirp.nl</title>
+	<id>{{ url_for('tip_index', _external=True) }}</id>
+	<link href="{{ url_for('tip_feed', _external=True) }}" rel="self" />
+	<link href="{{ url_for('tip_index', _external=True) }}" />
+	<icon>{{ url_for('static', filename='favicon.png', _external=True) }}</icon>
+	<updated>{{ feed_updated.strftime('%Y-%m-%dT%H:%M:%SZ') }}</updated>
+	<author>
+		<name>Roy Prins</name>
+	</author>
+	<rights type="html">
+		© Copyright 2014 by Snirp
+	</rights>
+	{% for article in articles %}
+	<entry>{% set url = article.url(_external=True) %}
+		<id>{{ url }}</id>
+		<title>{{ article.title }}</title>
+		<updated>{{ article.lastmod().strftime('%Y-%m-%dT%H:%M:%SZ') }}</updated>
+		<published>{{ article.published.strftime('%Y-%m-%dT%H:%M:%SZ') }}</published>
+		<author>
+			<name>{{ article.author }}</name>
+		</author>
+		<link href="{{ url }}" />
+		<content type="html">
+			{{ article.html|safe }}
+		</content>
+	</entry>
+	{% endfor %}
+</feed>

@@ -1,7 +1,9 @@
 title: Kopieer een deelcomplex inclusief condiemeting
-published: 2010-12-22
-lastmod: 2014-02-06
-summary: Instructie om een deelcomplex te kopieren, eventueel met inbegrip van conditiemetingen. Tevens instructie voor het verwijderen van een deelcomplex.
+author: Roy Prins
+summary: >
+    Instructie om een deelcomplex te kopieren, eventueel met inbegrip van conditiemetingen. Tevens
+    instructie voor het verwijderen van een deelcomplex.
+published: 2014-02-06
 
 ##Introductie
 
