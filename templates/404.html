@@ -1,13 +1,10 @@
-{% extends "base.html" %}
-
+{% extends "layout-base.html" %}
 
 {% block content %}
 <div id="content404">
   <h1>Deze pagina bestaat niet.</h1>
   <img id="img404" src="{{ url_for('static', filename='images/vallend.png') }}" alt="">
-  <a href="{{ url_for('home') }}" class="link404">
-    <i class="fa fa-arrow-circle-o-left"></i>
-    Terug naar snirp.nl
-  </a>
+
 </div>
 {% endblock %}
+

@@ -1,10 +1,9 @@
 import io
 import yaml
 import markdown as markdown_module
-import pygments.formatters
 import os
 import werkzeug
-import re
+import locale
 import itertools
 import datetime
 from flask import Flask, Markup, render_template, abort, render_template_string, url_for
@@ -12,13 +11,16 @@ from flask import Flask, Markup, render_template, abort, render_template_string,
 ### initialization ###
 app = Flask(__name__)
 
-PYGMENTS_CSS = (pygments.formatters.HtmlFormatter(style='tango').get_style_defs('.codehilite'))
-
 ### configuration ###
 app.config['FREEZER_DESTINATION'] = 'gh-pages'
 app.config['FREEZER_DESTINATION_IGNORE'] = ['.git*', 'CNAME', '.gitignore', 'readme.md']
 app.config['FREEZER_RELATIVE_URLS'] = True
-app.config['FREEZER_BASE_URL'] = 'http://flatfreeze.com'  # freezer uses this for _external=True URLs
+app.config['FREEZER_BASE_URL'] = 'http://snirp.nl'  # freezer uses this for _external=True URLs
+
+@app.template_filter()
+def date_nl(value):
+    locale.setlocale(locale.LC_ALL, ('nl_NL', 'utf8@euro'))
+    return value.strftime('%e %b %Y')
 
 @app.template_filter()
 def jinjatag(text):
@@ -240,19 +242,9 @@ def generate_sitemap():
     return app.response_class(xml, mimetype='application/atom+xml')
 
 
-def minify_css(css):
-    # Remove comments. *? is the non-greedy version of *
-    css = re.sub(r'/\*.*?\*/', '', css)
-    # Remove redundant whitespace
-    css = re.sub(r'\s+', ' ', css)
-    # Put back line breaks after block so that it's not just one huge line
-    css = re.sub(r'} ?', '}\n', css)
-    return css
-
 @app.route('/style.css')
 def stylesheet():
-    css = render_template('style.css', pygments_css=PYGMENTS_CSS)
-    css = minify_css(css)
+    css = render_template('style.css')
     return app.response_class(css, mimetype='text/css')
 
 @app.errorhandler(404)
@@ -264,8 +256,7 @@ def error_freeze():
     """explicitly set a route so that 404.html exists in gh-pages"""
     return render_template('404.html', pageid='page-404')
 
+
 ### launch ###
 if __name__ == "__main__":
     app.run(debug=True)
-
-

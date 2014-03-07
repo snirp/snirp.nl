@@ -1,8 +1,10 @@
-{% extends "base.html" %}
+{% extends "layout-base.html" %}
 
+{% block title %}{{ t.title }} | Snirp{% endblock %}
+{% block description %}{{ t.summary|safe }}{% endblock %}
 
 {% block content %}
-<div class="hidden-screen" id="printheader">
+<div id="printheader" class="hidden-screen">
   <p>
     Dit document is een artikel uit de reeks "Stravis Tips & Trucs". Deze artikelen
      worden u aangeboden door Snirp en We-R consultants. Bezoek de
@@ -11,14 +13,24 @@
   <p class="right">Copyright Snirp 2014</p>
 </div>
 
-<div class="container container-narrowed" id="tipcontent">
-<h1>{{ t.meta.title }}</h1>
+<div class="container-narrowed" id="tipcontent">
+  <div id="tipsubmenu">
+    <div class="pull-left">{{ t.author }}, {{ t.published|date_nl }}</div>
+    <a href="{{ t.pdf() }}" class="pull-right hidden-print">
+      <button class="btn btn-default"><i class="fa fa-file-text-o"></i> download pdf</button>
+    </a>
+    <a href="{{ url_for('tip_index') }}" class="pull-right hidden-print">
+      <button class="btn btn-default">toon alle tips</button>
+    </a>
+    <div class="clearfix"></div>
+  </div>
 
-{{ t.html|safe }}
+  <h1>{{ t.title }}</h1>
+
+  {{ t.html|safe }}
 </div>
 
-
-<div class="hidden-screen" id="printfooter">
+<div id="printfooter"  class="hidden-screen">
   <p class="center">www.snirp.nl - info@snirp.nl - Copyright Snirp 2014</p>
 </div>
 {% endblock %}

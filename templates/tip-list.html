@@ -1,17 +1,37 @@
-{% extends "base.html" %}
+{% extends "layout-base.html" %}
 {% macro html5_date(date, format='%B %d, %Y', pubdate=True) -%}
     <time{{ ' pubdate' if pubdate }} datetime="{{ date.isoformat() }}">
         {{ date }}</time>
 {%- endmacro %}
 
+{% block title %}Stravis tips | Snirp{% endblock %}
+{% block description %}Tips voor effectiever werken met Stravis{% endblock %}
+
+{% block extrahead %}
+<link rel="alternate" type="application/atom+xml" title="Stravis tips" href="{{ url_for('tip_feed') }}" />
+{% endblock %}
 
 {% block content %}
-<div class="container container-narrowed">
-<h1>Stravis tips & trucs</h1>
+<div class="container-narrowed">
+<h1 class="pull-left">Stravis tips & trucs</h1>
+<a href="{{ url_for('tip_feed') }}" id="feedlink" class="pull-right">
+  <button class="btn btn-default"><i class="fa fa-rss"></i> feed</button>
+</a>
+<div class="clearfix"></div>
+<div id="articles">
+  {% for tip in tips %}
+  <article>
+    <a href=" {{ tip.url() }} " class="blocklink">
+      <h2>{{ tip.title }}</h2>
+      <p>{{ tip.summary|jinjatag|markdown|safe }}</p>
+    </a>
+  </article>
+  {% endfor %}
+</div>
+
 <p>
-  Op deze pagina worden regelmatig tips & trucs voor beter en effectiever
-  gebruik van Stravis gepubliceerd.
-  De doelgroep betreft zowel de kerngebruikers van Stravis als de managers en
+  Hier publiceren we regelmatig tips & trucs voor beter en effectiever
+  gebruik van Stravis. Deze zijn voor zowel de kerngebruikers als de managers en
   teamleiders die te maken hebben met onderhoud en technisch beheer.
 </p>
 <p>
@@ -22,18 +42,6 @@
   Stravis Tips & Trucs groep </a> op Linked-in.
   Hier horen we ook graag uw suggesties.
 </p>
-<div id="articles">
-  {% for tip in tips %}
-  <article>
-    <a href=" {{ tip.url() }} " class="blocklink">
-      <h2>{{ tip.title }}</h2>
-      <p>{{ tip.summary|jinjatag|markdown|safe }}</p>
-      <div class="float-left"><p>{{ tip.author }}, {{ html5_date(tip.published) }}</p></div>
-      <a href="{{ tip.pdf() }}" class="blocklink float-right"><p>[download als pdf]</p></a>
-      <div class="clearfix"></div>
-    </a>
-  </article>
-  {% endfor %}
-</div>
+
 </div>
 {% endblock %}
