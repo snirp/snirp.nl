@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>snirp.nl</title>
-	<id>http://flatfreeze.com/tips.html</id>
-	<link href="http://flatfreeze.com/tip/atom.xml" rel="self" />
-	<link href="http://flatfreeze.com/tips.html" />
-	<icon>http://flatfreeze.com/static/favicon.png</icon>
+	<id>http://snirp.nl/tips.html</id>
+	<link href="http://snirp.nl/tip/atom.xml" rel="self" />
+	<link href="http://snirp.nl/tips.html" />
+	<icon>http://snirp.nl/static/favicon.png</icon>
 	<updated>2014-02-06T00:00:00Z</updated>
 	<author>
 		<name>Roy Prins</name>
@@ -14,14 +14,14 @@
 	</rights>
 	
 	<entry>
-		<id>http://flatfreeze.com/tip/deelcomplex-kopie.html</id>
+		<id>http://snirp.nl/tip/deelcomplex-kopie.html</id>
 		<title>Kopieer een deelcomplex inclusief condiemeting</title>
 		<updated>2014-02-06T00:00:00Z</updated>
 		<published>2014-02-06T00:00:00Z</published>
 		<author>
 			<name>Roy Prins</name>
 		</author>
-		<link href="http://flatfreeze.com/tip/deelcomplex-kopie.html" />
+		<link href="http://snirp.nl/tip/deelcomplex-kopie.html" />
 		<content type="html">
 			<h2>Introductie</h2>
 <p>Er kunnen verschillende aanleidingen zijn om een deelcomplex te kopieren of te verwijderen.
@@ -109,14 +109,14 @@ dan is dat een indicatie dat de voorgaande stap niet volledig is uitgevoerd.</p>
 	</entry>
 	
 	<entry>
-		<id>http://flatfreeze.com/tip/conditie-en-risico-sturing.html</id>
+		<id>http://snirp.nl/tip/conditie-en-risico-sturing.html</id>
 		<title>Risico- en conditiegestuurd onderhoud met Stravis</title>
 		<updated>2014-02-10T00:00:00Z</updated>
 		<published>2014-02-10T00:00:00Z</published>
 		<author>
 			<name>Roy Prins</name>
 		</author>
-		<link href="http://flatfreeze.com/tip/conditie-en-risico-sturing.html" />
+		<link href="http://snirp.nl/tip/conditie-en-risico-sturing.html" />
 		<content type="html">
 			<h2>Introductie</h2>
 <p>Dit artikel is geschreven voor beleidsmakers en technisch vastgoedbeheerders. We bespreken de mogelijkheden die vastgoedbeheerders hebben om onderhoud te sturen op prestaties: hiertoe kunnen conditiescores en (aspect)risico's in beeld gebracht worden en als sturingsinstrument gebruikt worden. Meer specifiek gaan we ook in op de mogelijkheden die Stravis hierin biedt.</p>

@@ -1,76 +1,96 @@
 <!DOCTYPE html>
-<html class='no-js' lang='nl'>
+<html lang='nl'>
 <head>
   <meta charset=utf-8>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-  <meta name='description' content='Snirp is een jong maar ervaren adviebureau dat vastgoedbeheer stroomlijnt.'>
+  <title>Gestroomlijnd vastgoedbeheer | Snirp</title>
+  <meta name="description" content="Werkt samen aan vastgoed dat in dienst staat van de strategische bedrijfsdoelen." />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" lang="nl" content="vastgoed, advies, onderhoud, kosten, beheer, woningen, energie, nen 2767">
 
   <link rel='author' href='https://plus.google.com/+RoyPrins_page?rel=author'>
   <link rel='shortcut icon' type='image/png' href="static/images/snirp_favicon.png">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
-  <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
-  <link rel=stylesheet href="style.css">
+  <!-- my custom stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- import jQuery before bootstrap -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).on("scroll",function(){
+        /* Activate transition between large and small menu after 100px scolling */
+        if($(document).scrollTop()>100){
+            $("#logo").removeClass("largemenu").addClass("smallmenu");
+            $("#navwrap").removeClass("largemenu").addClass("smallmenu");
+        } else{
+            $("#logo").removeClass("smallmenu").addClass("largemenu");
+            $("#navwrap").removeClass("smallmenu").addClass("largemenu");
+        }
+    });
+  </script>
   <script src="static/js/custom_scripts.js" type='text/javascript'></script>
-<!--[if lte IE 9]>
-  <script src="static/js/html5shiv.js"></script>
-<![endif]-->
-
-  <title>Snirp: gestroomlijnd vastgoedbeheer</title>
+  <!--[if lte IE 9]>
+    <script src="static/js/html5shiv.js"></script>
+  <![endif]-->
 
 </head>
-
 <body id="page-home">
-
-<header class="container container-full primary-color">
-  <div class="container container-wide">
-    <img src="static/images/logo_214px.png" id='logo' alt='logo snirp'>
-
-    <div id="contactbuttons">
-      <a href="mailto:info@snirp.nl" target="_blank" title="e-mail"><i class="fa fa-envelope"></i>
-        <span class="hidden-small">info@snirp.nl</span>
-      </a>
-      <a href="tel:0647416278" title="telefonisch contact"><i class="fa fa-phone"></i>
-        <span class="hidden-small">+31(0)6 47 416 278</span>
-      </a>
+<div id="wrap"><!--wrapper for sticky footer-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div id="navwrap" class="container-fluid nav-wide largemenu">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="static/images/logo.png" id="logo" class="largemenu"></a>
     </div>
 
-    <nav>
-      <ul>
-        <li id="nav-home"><a href="index.html">Home</a></li>
-        <li id="nav-tip"><a href="tips.html">Stravis tips</a></li>
-        <li id="nav-contact"><a href="contact.html">Contact</a></li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li id="nav-home"><a href="index.html">HOME</a></li>
+        <li id="nav-tip"><a href="tips.html">STRAVIS</a></li>
+        <li id="nav-contact"><a href="contact.html">CONTACT</a></li>
+        <li><a href="mailto:info@snirp.nl" target="_blank" title="e-mail"><i class="fa fa-envelope fa-fw"></i></a></li>
+        <li><a href="tel:0647416278" title="telefonisch contact"><i class="fa fa-phone fa-fw"></i></a></li>
       </ul>
-    </nav>
-  </div>
 
-  <div class="clearfix"></div>
-</header>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 
 <div id="content">
 
 
-<div class="container container-full center">
-  <img class="hidden-small" id="portrait" src="static/images/portrait_round.png" alt="portret">
-  <img class="visible-small" id="portrait-small" src="static/images/portrait_landscape.jpg" alt="portret">
+<section id="profile">
+  <img class="hidden-sm hidden-xs" id="portrait" src="static/images/portrait_round.png" alt="portret">
+  <img class="hidden-md hidden-lg" id="portrait-small" src="static/images/portrait_landscape.jpg" alt="portret">
 
-  <div class="container container-narrowed" id="profile">
+  <div class="container-narrowed">
     <p>
       Snirp is een jong maar ervaren adviesbureau voor vastgoedbeheer, opgericht door Roy Prins.
       Een procesverbeteraar die succesvolle implementaties en optimalisaties bij woningcorporaties en in andere bedrijfstakken heeft geleid.
       Vanuit een bouwkundige achtergrond is informatiemanagement, en kansen die dit biedt, mijn passie.
     </p>
   </div>
-  <ul class="inline-list" id="social-list">
+  <ul class="list-inline" id="social-list">
     <li><a href="http://twitter.com/royprins" target="_blank" title="twitter">twitter</a></li>
     <li><a href="https://www.linkedin.com/in/prinsroy" target="_blank" title="linked-in profiel">linked-in</a></li>
     <li><a href="http://royprins.com/" target="_blank" title="blog van Roy Prins">blog</a></li>
   </ul>
-</div>
+</section>
 
-<div class="container container-full primary-color">
-  <div class="container container-wide" id="pitch">
-    <h1>De stroomlijn van vastgoedbeheer.</h1>
+<section id="pitch" class="primary-color">
+  <div class="container-wide">
+    <h1>Snirp: de stroomlijn van vastgoedbeheer.</h1>
     <p>
       Vastgoed zelf is niet gestroomlijnd, maar bij het beheer van vastgoed eisen we wel de perfecte stroomlijn.
       Dit betekent niet simpelweg minimale beheerkosten of maximaal rendement.
@@ -78,16 +98,13 @@
       Hoe u dit vorm geeft? Daar denk en werk ik aan mee.
     </p>
   </div>
-</div>
-<div class="container container-full primary-color" id="graphic">
-  <img src="static/images/stroomlijn.png" width="700px" class="hidden-small" alt="stroomlijn">
-  <img src="static/images/stroomlijn-small.png" width="354px" class="visible-small" alt="stroomlijn">
-</div>
+  <img src="static/images/stroomlijn.png" width="700px" class="hidden-sm hidden-xs" alt="stroomlijn">
+  <img src="static/images/stroomlijn-small.png" width="354px" class="hidden-md hidden-lg" alt="stroomlijn">
+</section>
 
 
-<div class="container container-wide column-container" id="products">
-
-  <div class="column column-1-3">
+<section id="products" class="container-wide row">
+  <div class="col-md-4">
     <h2>Proces- en informatiemanagement</h2>
     <p>
       Welke knelpunten en risico's moet een gestroomlijnde organisatie in beeld hebben?
@@ -101,8 +118,7 @@
       Snirp biedt een quickscan van de tactische beheerprocessen en maken inzichtelijk waar knelpunten en risico's zijn.
     </p>
   </div>
-
-  <div class="column column-1-3">
+  <div class="col-md-4">
     <h2>Projectmanagement</h2>
     <p>
       Verandering en verbetering zijn een constante noodzaak, maar brengen ook risico"s met zich mee.
@@ -114,8 +130,7 @@
       Hierbij helpt mijn specifieke kennis op gebied van informatievoorziening, integrale begrotingen, energieprestaties (EPA) en automatisering.
     </p>
   </div>
-
-  <div class="column column-1-3">
+  <div class="col-md-4">
     <h2>Trainingen Stravis en conditiemeting</h2>
     <p>
       Conditiemetingen conform NEN 2767 zijn een genormeerde methode om de onderhoudsstaat en risico"s van vastgoed in beeld te brengen.
@@ -131,150 +146,157 @@
       Ik ondersteun hierin en geef training, zodat u maximaal effectief kunt zijn.
     </p>
   </div>
+</section>
 
-  <div class="clearfix"></div>
-</div>
 
-<div class="container container-full" id="slidebox">
-  <a class="container container-wide hidden-large secondary-color" id="toggle" href="#slidebox" title="toon referentieproject" onclick="toggleFeatured(); return false;">
-    <span>Toon project "optimalisatie onderhoud"</span>
-    <div id="maximize"><i class="fa fa-plus"></i></div>
-    <div class="clearfix"></div>
-  </a>
-  <div class="container container-wide column-container" id="featured">
-    <div class="column column-3-5" id="project">
-      <h5>Uitgelicht project</h5>
-        <dl>
-          <dt>onderwerp:</dt><dd>Optimalisatie proces planmatig onderhoud</dd>
-          <dt>opdrachtgever:</dt><dd><a href="http://www.woonstede.nl/" target="_blank" title="Woonstede">Woonstede, Ede</a></dd>
-          <dt>uitvoeringspartner:</dt><dd><a href="http://www.we-r-consultants.nl/" target="_blank" title="We-R Consultants">We-R consultants</a></dd>
-        </dl>
-        <div class="clearfix"></div>
-      <h5>Vraag</h5>
+<div id="refproject">
+
+<section id="featured" class="container-wide row">
+  <div class="col-md-7">
+    <h5>Uitgelicht project</h5>
+      <dl>
+        <dt>onderwerp:</dt><dd>Optimalisatie proces planmatig onderhoud</dd>
+        <dt>opdrachtgever:</dt><dd><a href="http://www.woonstede.nl/" target="_blank" title="Woonstede">Woonstede, Ede</a></dd>
+        <dt>uitvoeringspartner:</dt><dd><a href="http://www.we-r-consultants.nl/" target="_blank" title="We-R Consultants">We-R consultants</a></dd>
+      </dl>
+      <div class="clearfix"></div>
+    <h5>Vraag</h5>
+    <p>
+      Binnen Woonstede is de rol van de afdeling planmatig onderhoud veranderd:
+      er wordt gevraagd om een onderbouwd advies binnen een taakstellend budget.
+      De onderbouwing en sturing vindt plaats binnen technische kaders en binnen de risico-aspecten van NEN 2767.
+      De processen en IT producten waren niet voor deze taak ingericht, hetgeen voor het draagvlak essentieel is.
+    </p>
+    <p>
+      De vraag was om de processen en indicatoren te optimaliseren, zodat goed en effectief aan deze eisen kan worden voldaan.
+      Een nevenvraag was om SG Stravis zodanig in te richten dat de scenario's voor onderhoud hierbij aansluiten.
+      Tevens dient de synchronisatie met de cartotheek, het prijzenbestand en de bezitsstructuur in TOBIAS AX geborgd te zijn.
+    </p>
+    <h5>Uitwerking</h5>
+    <p>
+      In een klein projectteam van Woonstede, We-R Consultants en Snirp is een plan van aanpak gemaakt en gevolgd.
+      Belangrijke randvoorwaarden waren de gelijktijdige update van het primaire systeem en de behoefte aan diverse gegevens (bezit, beleidsparameters, inventarisaties en onderhoudscriteria).
+      Dit betekende dat we binnen het team goed vooruit moesten plannen en snel dienden te kunnen schakelen.
+    </p>
+    <p>
+      De oplossing lag in een beperkte pilot (ongeveer 10% van het bezit) waarmee we snel een beeld konden krijgen van de consequenties van gemaakte keuzes.
+      Dit gaf ook de mogelijkheid om de verbeteringen in een vroeg stadium met de stakeholders af te stemmen.
+      Vervolgens zijn de optimalisaties doorgevoerd op basis van de verkregen feedback en zijn de wijzigingen succesvol naar de productieomgeving uitgerold.
+    </p>
+  </div>
+  <div class="col-md-5 hidden-sm hidden-xs">
+    <img src="static/images/diagram_spin.jpg" class="diagram" alt="diagram">
+    <div class='caption text-center'>Onderhoudskosten per risico-aspect.</div>
+    <img src="static/images/diagram_bars.png" class="diagram" alt="diagram">
+    <div class="caption text-center">Kosten voor verschillende onderhoudsniveaus.</div>
+  </div>
+</section>
+
+<section id="quote" class="container-wide row">
+  <div class="col-md-1 hidden-sm hidden-xs quotemark">
+    “
+  </div>
+  <blockquote class="col-md-10">
+    <p>Snirpadvies heeft in een kort tijdbestek veel werk verricht. Het project stond onder tijdsdruk omdat we moesten starten met de MJOB. Het viel ons positief op dat Snirpadvies proactief meedenkt met oplossingen en zich ondanks de druk flexibel opstelt. Door de korte communicatielijn was het mogelijk om snel te schakelen en het project te realiseren binnen de deadline.</p>
+    <p>In het project waren een aantal controlemomenten bepaald, waarop wij de voortgang van het project konden bewaken en de kwaliteit van de geleverde gegevens.</p>
+    <p>Snirpadvies is handig in het verzamelen en analyseren van de gegevens, waardoor wij snel een beeld kregen van de gemaakte keuzes en consequenties daarvan. Mede door de input van Snirpadvies konden wij waarnodig het project bij te sturen om het gewenste resultaat te behalen.</p>
+    <p class="text-right">Alex Boekhorst: adviseur Vastgoedsturing, Woonstede</p>
+  </blockquote>
+  <div class="col-md-1 hidden-sm hidden-xs quotemark">
+    ”
+  </div>
+</section>
+
+</div><!-- /#refproject -->
+
+
+<section class="light-noise" id="mission">
+  <div class="container-wide row">
+    <div class="col-md-3 hidden-sm hidden-xs">
+      <i id="beeldmerk" class="fa fa-location-arrow"></i>
+    </div>
+    <div class="col-md-9">
+      <h3>De missie en werkwijze van Snirp.</h3>
       <p>
-        Binnen Woonstede is de rol van de afdeling planmatig onderhoud veranderd:
-        er wordt gevraagd om een onderbouwd advies binnen een taakstellend budget.
-        De onderbouwing en sturing vindt plaats binnen technische kaders en binnen de risico-aspecten van NEN 2767.
-        De processen en IT producten waren niet voor deze taak ingericht, hetgeen voor het draagvlak essentieel is.
+        Met Snirp committeer ik me aan het optimaliseren van het technisch vastgoedbeheer en onderhoud.
+        Dit is een dynamisch speelveld, vooral wat betreft de financiële kaders.
+        De realiteit is dat de stroomlijn van het vastgoedbeheer kritiek geworden is voor de continuïteit en de bedrijfsdoelen van vastgoedbeheerders.
+        Met mijn ervaring en ambitie kan ik hierin een verschil maken.
       </p>
       <p>
-        De vraag was om de processen en indicatoren te optimaliseren, zodat goed en effectief aan deze eisen kan worden voldaan.
-        Een nevenvraag was om SG Stravis zodanig in te richten dat de scenario's voor onderhoud hierbij aansluiten.
-        Tevens dient de synchronisatie met de cartotheek, het prijzenbestand en de bezitsstructuur in TOBIAS AX geborgd te zijn.
-      </p>
-
-      <h5>Uitwerking</h5>
-      <p>
-        In een klein projectteam van Woonstede, We-R Consultants en Snirp is een plan van aanpak gemaakt en gevolgd.
-        Belangrijke randvoorwaarden waren de gelijktijdige update van het primaire systeem en de behoefte aan diverse gegevens (bezit, beleidsparameters, inventarisaties en onderhoudscriteria).
-        Dit betekende dat we binnen het team goed vooruit moesten plannen en snel dienden te kunnen schakelen.
-      </p>
-      <p>
-        De oplossing lag in een beperkte pilot (ongeveer 10% van het bezit) waarmee we snel een beeld konden krijgen van de consequenties van gemaakte keuzes.
-        Dit gaf ook de mogelijkheid om de verbeteringen in een vroeg stadium met de stakeholders af te stemmen.
-        Vervolgens zijn de optimalisaties doorgevoerd op basis van de verkregen feedback en zijn de wijzigingen succesvol naar de productieomgeving uitgerold.
+        Deze missie voer ik samen met u op interim of project basis uit.
+        Ik werk ook graag samen met ondernemers die ook een uitdaging vinden in de veranderde realiteit van de markt.
+        Kleinschaligheid, vakmanschap en ondernemerschap zorgen zo voor een prikkelende en duurzame relatie waarin de opdrachtgever de winnaar is.
       </p>
     </div>
-    <div class="column column-2-5 hidden-small" id="diagrams">
-      <img src="static/images/diagram_spin.jpg" class="diagram" alt="diagram">
-      <div class='caption center light-grey'>Onderhoudskosten per risico-aspect.</div>
-      <img src="static/images/diagram_bars.png" class="diagram" alt="diagram">
-      <div class="caption center light-grey">Kosten voor verschillende onderhoudsniveaus.</div>
+  </div>
+</section>
+
+
+</div>
+</div><!--wrapper for sticky footer-->
+<footer class="primary-color">
+  <div class="container-wide row">
+
+    <div class="col-md-6">
+      <p id="calltoaction">
+        Vul hieronder uw email adres in en ik neem binnen een werkdag contact met u op.
+      </p>
+      <form action="https://docs.google.com/a/juis.nl/forms/d/1EsnYyDLyKQ4gdoF1TZ9AE4HlAExXARfKDaryR00pKmY/formResponse" method="POST" id="contactform" target="_self" onsubmit="">
+        <!-- If possible the form is submitted through an Ajax call. Otherwise regular HTTP and redirect to google :( -->
+        <div class="input-group">
+          <input type="email" name="entry.1734369535" class="ss-q-short form-control" placeholder="e-mail adres" required="" title="Vul een geldig e-mail adres in ( naam@domein.com ).">
+          <span class="input-group-btn">
+            <button name="submit" class="btn btn-default" type="submit" id="ss-submit" >Neem contact op</button>
+          </span>
+        </div>
+        <!--default Google Forms hidden fields: left unchanged -->
+        <input type="hidden" name="draftResponse" value="[,,&quot;-8045959761931593377&quot;]">
+        <input type="hidden" name="pageHistory" value="0">
+        <input type="hidden" name="fromEmail" value="false">
+        <input type="hidden" name="fbzx" value="-8045959761931593377">
+      </form>
     </div>
-    <div class="clearfix"></div>
-  </div>
-</div>
 
-<div class="container container-full" id="quote">
-  <div class="container container-wide center">
-    <div class="quotation">“”</div>
-    <blockquote>
-      <p>Snirpadvies heeft in een kort tijdbestek veel werk verricht. Het project stond onder tijdsdruk omdat we moesten starten met de MJOB. Het viel ons positief op dat Snirpadvies proactief meedenkt met oplossingen en zich ondanks de druk flexibel opstelt. Door de korte communicatielijn was het mogelijk om snel te schakelen en het project te realiseren binnen de deadline.</p>
-      <p>In het project waren een aantal controlemomenten bepaald, waarop wij de voortgang van het project konden bewaken en de kwaliteit van de geleverde gegevens.</p>
-      <p>Snirpadvies is handig in het verzamelen en analyseren van de gegevens, waardoor wij snel een beeld kregen van de gemaakte keuzes en consequenties daarvan. Mede door de input van Snirpadvies konden wij waarnodig het project bij te sturen om het gewenste resultaat te behalen.</p>
-    </blockquote>
-    <div class="quotee">- Alex Boekhorst: adviseur Vastgoedsturing, Woonstede</div>
-  </div>
-</div>
-
-
-<div class="container container-full light-noise" id="mission">
-  <div class="container container-narrowed">
-    <h3>De missie en werkwijze van Snirp.</h3>
-    <p>
-      Met Snirp committeer ik me aan het optimaliseren van het technisch vastgoedbeheer en onderhoud.
-      Dit is een dynamisch speelveld, vooral wat betreft de financiële kaders.
-      De realiteit is dat de stroomlijn van het vastgoedbeheer kritiek geworden is voor de continuïteit en de bedrijfsdoelen van vastgoedbeheerders.
-      Met mijn ervaring en ambitie kan ik hierin een verschil maken.
-    </p>
-    <p>
-      Deze missie voer ik samen met u op interim of project basis uit.
-      Ik werk ook graag samen met ondernemers die ook een uitdaging vinden in de veranderde realiteit van de markt.
-      Kleinschaligheid, vakmanschap en ondernemerschap zorgen zo voor een prikkelende en duurzame relatie waarin de opdrachtgever de winnaar is.
-    </p>
-  </div>
-</div>
-
-<div class="container container-full primary-color" id="action">
-  <div class="container container-wide">
-    <h3>Profiteer van de kennis en diensten.</h3>
-    <p>
-      Vul hieronder uw gegevens in en ik neem binnen een werkdag contact met u op.
-      Mogelijk kan ik iets betekenen op het gebied van <strong>training</strong>, <strong>projectmanagement</strong> of <strong>procesverbetering</strong>.
-    </p>
-
-    <div class="ss-form-container center">
-      <div class="ss-form">
-        <form action="https://docs.google.com/a/juis.nl/forms/d/1MCQZPdM5zTSQV8IxJzh76zLEeKRo_AMawB66tdSuD00/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
-
-          <input placeholder="Naam" type="text" name="entry.974616531" value="" class="ss-q-short" id="entry_974616531" dir="auto" aria-label="naam  " aria-required="true" required="" title="Vul hier uw naam in.">
-          <input placeholder="E-mail adres" type="email" name="entry.359074368" value="" class="ss-q-short" id="entry_359074368" dir="auto" aria-label="email  Vul hier een geldig email adres in." title="Vul hier een geldig email adres in.">
-          <input placeholder="Telefoonnummer" type="text" name="entry.334739150" value="" class="ss-q-short" id="entry_334739150" dir="auto" aria-label="telefoon  " title="">
-
-          <input type="hidden" name="draftResponse" value="[,,&quot;7523597819545463508&quot;]">
-          <input type="hidden" name="pageHistory" value="0">
-          <input type="hidden" name="fbzx" value="7523597819545463508">
-
-          <input type="submit" name="submit" value="Neem contact met mij op" id="ss-submit">
-        </form>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-xs-6">
+          <h4>WEBSITE</h4>
+          <p id="copyright">
+            Webdesign and development by Roy Prins. <br>
+            &copy; 2004, Snirp.
+          </p>
+        </div>
+        <div class="col-xs-6">
+          <h4>CONTACT</h4>
+          <ul>
+            <li><a href="mailto:info@snirp.nl" title="e-mail">info@snirp.nl</a></li>
+            <li><a href="tel:0647416278" title="telefonisch contact">06-47416278</a></li>
+            <li><a href="static/images/royprins.vcf" title="voeg toe als contact">download V-card</a></li>
+            <li class="hidden" title="google+"><a href="https://plus.google.com/+RoyPrins_page?rel=author">google+</a></li>
+          </ul>
+        </div>
       </div>
     </div>
+
   </div>
-</div>
-
-
-
-</div>
-
-<footer>
-  <div class="container container-wide column-container">
-    <div class="column column-1-3">
-      <h4>PARTNERS</h4>
-      <ul>
-        <li>We-R Consultants</li>
-        <li class="hidden"><a href="www.sg.nl" title="SG Stravis" target="_blank">SG|automatisering</a></li>
-      </ul>
-    </div>
-    <div class="column column-1-3">
-      <h4>GEGEVENS</h4>
-      <ul>
-        <li>KvK: 55863698</li>
-        <li>Bank: 39.63.59.450</li>
-        <li>BTW: NL178822383B01</li>
-      </ul>
-    </div>
-    <div class="column column-1-3">
-      <h4>CONTACT</h4>
-        <ul>
-          <li><a href="mailto:info@snirp.nl" title="e-mail">info@snirp.nl</a></li>
-          <li><a href="tel:0647416278" title="telefonisch contact">06-47416278</a></li>
-          <li><a href="static/images/royprins.vcf" title="voeg toe als contact">download V-card</a></li>
-          <li class="hidden" title="google+"><a href="https://plus.google.com/+RoyPrins_page?rel=author">google+</a></li>
-        </ul>
-    </div>
-  </div>
-  <div class="clearfix"></div>
 </footer>
-
+  <script type="text/javascript">
+    var frm = $('#contactform');
+    var e = $('#contactform input');
+    frm.submit(function (ev) {
+      $.ajax({
+        // Submit form data as specified in the HTML tag
+        type: frm.attr('method'),
+        url: frm.attr('action'),
+        data: frm.serialize()
+      });
+    // Succes feedback: ajax success-function not working due to google server
+    $(e).toggleClass("confirm-input");
+    $(e).val("");
+    $(e).attr("placeholder", "Bedankt!");
+    ev.preventDefault();
+    });
+  </script>
 </body>
 </html>

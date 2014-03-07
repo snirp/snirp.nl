@@ -1,15 +1,3 @@
-/* custom toggle */
-var toggleFeatured = function(){
-    if (document.getElementsByTagName('html')[0].className.indexOf('csstransitions') == -1) {
-    document.getElementById('toggle').style.display = 'none';
-    var f = document.getElementById('featured');
-    f.style.opacity = 1;
-    f.style.maxHeight = '900px';
-    } else {
-    window.location = '#slidebox';
-    }
-};
-
 /* analytics */
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
