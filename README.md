@@ -1,6 +1,6 @@
 ##snirp.nl
 
-This repository contains the company website for [Snirp](http://www.snirp.nl).
+This repository powers the company website for [Snirp](http://www.snirp.nl).
 
 This branch: [master](https://github.com/snirp/snirp.nl/tree/master) > contains Flask application
 

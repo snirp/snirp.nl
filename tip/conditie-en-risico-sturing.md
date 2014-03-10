@@ -1,7 +1,7 @@
 title: Risico- en conditiegestuurd onderhoud met Stravis
 author: Roy Prins
 summary: >
-    De mogelijkheden die Stravis biedt om onderhoud te sturen op prestaties: conditiescores
+    Stravis biedt de mogelijkheid om onderhoud te sturen op prestaties: conditiescores
     en (aspect)risico's in beeld brengen en als sturingsinstrument gebruiken.
 published: 2014-02-10
 
