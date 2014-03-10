@@ -14,6 +14,7 @@ html {
   display:none;
 }
 
+
 /* ============================================*/
 /* @GROUP typography */
 
@@ -119,11 +120,20 @@ blockquote {
   font-weight: 200;
 }
 
+a.primary-color {
+  color:#fff;
+}
+
 .secondary-color {
   background-color: #1ba1e2;
   color:#fff;
   font-weight: 300;
 }
+
+a.secondary-color {
+  color:#fff;
+}
+
 
 .light-noise {
   background-image:url("{{ url_for('static', filename='images/noise_lightgrey.png') }}");
@@ -269,7 +279,7 @@ blockquote {
 /* ============================================*/
 /* @GROUP mission */
 
-#mission {
+#mission, #tipinfo {
   border-top: 1px solid #aaa;
 }
 
@@ -307,7 +317,6 @@ footer h4 {
 
 footer #copyright {
   padding: 5px 0 0 20px;
-  border-left: 1px dotted #fff;
   line-height: 18px;
 }
 
@@ -321,8 +330,6 @@ footer ul {
   list-style-type: none;
   padding-left: 20px;
   margin: 0;
-  border-left: 1px dotted #fff;
-  border-right: 1px dotted #fff;
 }
 
 footer li {
@@ -372,6 +379,13 @@ footer li a {
 
   #contactform {
   padding-bottom: 0;
+  }
+
+  article .fa  {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: block;
   }
 
 }
@@ -425,15 +439,16 @@ footer li a {
 }
 
 article {
-  border:1px solid #1ba1e2;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-top: 20px;
+  margin-bottom: 25px;
+  display: table;
 }
 
+article .row a {
+  padding: 5px 0;
+}
 
 article h2 {
-  padding-top: 5px;
+  padding-top: 0;
   padding-bottom: 5px;
   margin: 0;
 }
@@ -515,6 +530,7 @@ article p {
 #tipcontent img {
   display: block;
   margin: 0 auto;
+  max-width:100%;
 }
 
 .blocklink {

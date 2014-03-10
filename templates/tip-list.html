@@ -12,36 +12,50 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-narrowed">
-<h1 class="pull-left">Stravis tips & trucs</h1>
-<a href="{{ url_for('tip_feed') }}" id="feedlink" class="pull-right">
-  <button class="btn btn-default"><i class="fa fa-rss"></i> feed</button>
-</a>
-<div class="clearfix"></div>
-<div id="articles">
-  {% for tip in tips %}
-  <article>
-    <a href=" {{ tip.url() }} " class="blocklink">
-      <h2>{{ tip.title }}</h2>
-      <p>{{ tip.summary|jinjatag|markdown|safe }}</p>
-    </a>
-  </article>
-  {% endfor %}
+<div class="container-wide">
+  <h1 class="pull-left">Stravis tips & trucs</h1>
+  <a href="{{ url_for('tip_feed') }}" id="feedlink" class="pull-right">
+    <button class="btn btn-default"><i class="fa fa-rss"></i> atom feed</button>
+  </a>
+  <div class="clearfix"></div>
+  <div id="articles">
+
+    {% for tip in tips %}
+      <article class="row">
+        <a class="col-md-10" href="{{ tip.url() }}">
+            <h2>tip: {{ tip.title }}</h2>
+            <p>{{ tip.summary|jinjatag|markdown|safe }}</p>
+        </a>
+        <div class="col-md-2">
+          <div class="row">
+            <a class="col-xs-6 primary-color text-center" href="{{ tip.url() }}">
+              <i class="fa fa-plus"></i> open
+            </a>
+            <a class="col-xs-6 secondary-color text-center" href="{{ tip.pdf() }}">
+              <i class="fa fa-file-text-o"></i> pdf
+            </a>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
 </div>
 
-<p>
-  Hier publiceren we regelmatig tips & trucs voor beter en effectiever
-  gebruik van Stravis. Deze zijn voor zowel de kerngebruikers als de managers en
-  teamleiders die te maken hebben met onderhoud en technisch beheer.
-</p>
-<p>
-  Deze artikelen worden u aangeboden door Snirp en
-  <a href="http://www.we-r-consultants.nl/" target="_blank">We-R consultants</a>.
-  Wij hopen hiermee het gebruik en de mogelijkheden van Stravis te professionaliseren.
-  We bespreken onderstaande artikelen op onze <a href="https://www.linkedin.com/groups?gid=7454573" target="_blank">
-  Stravis Tips & Trucs groep </a> op Linked-in.
-  Hier horen we ook graag uw suggesties.
-</p>
-
-</div>
+<section class="light-noise" id="tipinfo">
+  <div class="container-wide">
+    <p>
+      Hier publiceren we regelmatig tips & trucs voor beter en effectiever
+      gebruik van Stravis. Deze zijn voor zowel de kerngebruikers als de managers en
+      teamleiders die te maken hebben met onderhoud en technisch beheer.
+    </p>
+    <p>
+      Deze artikelen worden u aangeboden door Snirp en
+      <a href="http://www.we-r-consultants.nl/" target="_blank">We-R consultants</a>.
+      Wij hopen hiermee het gebruik en de mogelijkheden van Stravis te professionaliseren.
+      We bespreken onderstaande artikelen op onze <a href="https://www.linkedin.com/groups?gid=7454573" target="_blank">
+      Stravis Tips & Trucs groep </a> op Linked-in.
+      Hier horen we ook graag uw suggesties.
+    </p>
+  </div>
+</section>
 {% endblock %}

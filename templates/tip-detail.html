@@ -15,7 +15,7 @@
 
 <div class="container-narrowed" id="tipcontent">
   <div id="tipsubmenu">
-    <div class="pull-left">{{ t.author }}, {{ t.published|date_nl }}</div>
+    <div class="pull-left">{{ t.author }}<br>{{ t.published|date_nl }}</div>
     <a href="{{ t.pdf() }}" class="pull-right hidden-print">
       <button class="btn btn-default"><i class="fa fa-file-text-o"></i> download pdf</button>
     </a>

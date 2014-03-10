@@ -134,44 +134,33 @@ Bij het uitvoeren van de conditiemeting worden de aard, omvang en intensiteit va
 		<th>gebrek</th>
 		<th>omvang</th>
 		<th>intens.</th>
-		<th>aspect</th>
-		<th>score</th>
+
 </tr>
 <tr>	<td>Metselwerk</td>		
 		<td>Scheurvorming</td>	
 		<td>2%-10%</td>	
 		<td>Hoog</td>
-		<td class='center'><span class='cm cm3'>3</span></td>
-		<td>Veiligheid</td>		
-
 </tr>
-<tr>	<td></td>		
-		<td></td>	
-		<td></td>
-		<td></td>
-		<td class='center'><span class='cm cm2'>2</span></td>
-		<td>Werking</td>
+</table>
+<p></p>
+<table>
+<tr>	<th>aspect</th>
+		<th>score</th>
 </tr>
-<tr>	<td></td>		
-		<td></td>	
-		<td></td>
-		<td></td>
-		<td class='center'><span class='cm cm3'>3</span></td>
-		<td>Gevolgsch.</td>
+<tr>	<td>Veiligheid</td>
+        <td class='center'><span class='cm cm3'>3</span></td>
 </tr>
-<tr>	<td></td>		
-		<td></td>	
-		<td></td>	
-		<td></td>
-		<td class='center'><span class='cm cm2'>2</span></td>
-		<td>Uitstraling</td>
+<tr>	<td>Werking</td>
+    <td class='center'><span class='cm cm2'>2</span></td>
 </tr>
-<tr>	<td></td>		
-		<td></td>	
-		<td></td>	
-		<td></td>
-		<td class='center'><span class='cm cm2'>2</span></td>
-		<td>Cultuurhist.</td>
+<tr>	<td>Gevolgschade</td>
+        <td class='center'><span class='cm cm3'>3</span></td>
+</tr>
+<tr>	<td>Uitstraling</td>
+        <td class='center'><span class='cm cm2'>2</span></td>
+</tr>
+<tr>    <td>Cultuurhistorisch</td>
+        <td class='center'><span class='cm cm2'>2</span></td>
 </tr>
 </table>
 
