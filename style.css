@@ -569,8 +569,11 @@ article p {
 
 #tipcontent .cm {
   padding:0 4px;
-
+  display: inline;
   font-family: monospace, serif;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
 #tipcontent .cm2 {
