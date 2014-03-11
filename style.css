@@ -579,25 +579,21 @@ article p {
 #tipcontent .cm2 {
   background-color: green;
   color: #fff;
-  border: 1px solid green;
 }
 
 #tipcontent .cm3 {
   background-color: yellow;
   color: #000;
-  border: 1px solid yellow ;
 }
 
 #tipcontent .cm4 {
   background-color: orange;
   color: #000;
-  border: 1px solid orange;
 }
 
 #tipcontent .cm6 {
   background-color: red;
   color: #fff;
-  border: 1px solid red;
 }
 
 #tipcontent blockquote {
@@ -651,8 +647,36 @@ article p {
 @media print {
   nav { display: none; }
   footer { display: none; }
-  p, li {font-size: 12px;}
+  p, li {
+    font-size: 12px;
+  }
   .hidden-screen { display: inherit !important;  }
   .hidden-print { display: none !important;  }
   #content { padding-top: 0; }
+
+  #tipcontent .cm2 {
+  background-color: green !important;
+  color: #fff !important;
+  }
+
+  #tipcontent .cm3 {
+    background-color: yellow !important;
+    color: #000 !important;
+  }
+
+  #tipcontent .cm4 {
+    background-color: orange !important;
+    color: #000 !important;
+  }
+
+  #tipcontent .cm6 {
+    background-color: red !important;
+    color: #fff !important;
+  }
+
+  #tipcontent h2, #tipcontent h4, #tipcontent h6 {
+  color: #1ba1e2 !important;
+  }
+
+
 }
