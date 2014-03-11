@@ -37,12 +37,6 @@
     <script src="js/html5shiv.js"></script>
     <style>
     .hidden-sm, .hidden-xs, .hidden-ie  { display: none; }
-    .navbar-collapse.collapse {
-      display: block !important;
-      height: auto !important;
-      padding-bottom: 0;
-      overflow: visible !important;
-    }
     </style>
   <![endif]-->
 
